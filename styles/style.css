@@ -1,0 +1,266 @@
+.main-body {
+    width: 1280px;
+    margin: 10px auto;
+}
+
+/* ОБЩЕЕ ОФОРМЛЕНИЕ SECTION */
+
+.main-block {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-block_color_dark {
+    background-color: #582D01;
+}
+.main-block_color_white {
+    background-color: #ffffff;
+}
+.main-block_color_blue {
+    background-color: #eee384;
+}
+
+/* БЛОК PRODUCT */
+
+.main-block-product__title {
+    color: white;
+}
+.main-block-product__item {
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+.main-block-product__item::before {
+    content: url(/assets/product-check.png);
+    margin-right: 5px;
+}
+.main-block-product__image {
+    display: block;
+    position: absolute;
+    width: 21%;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+}
+
+/* БЛОК ABOUT */
+
+.main-block-about__title {
+    text-align: center;
+}
+.main-block-about__text {
+    width: 60%;
+}
+.main-block-about__image {
+    display: block;
+    position: absolute;
+    width: 10%;
+    margin: auto;
+    bottom: 10px;
+    right: 75px;
+}
+
+/* БЛОК DIGNITY */
+
+.main-block-dignity__title {
+    text-align: center;
+}
+.main-block-dignity__advantages {
+    display: flex;
+}
+.main-block-dignity__item {
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.main-block-dignity__item::before {
+    content: url(/assets/dignity-check.png);
+    margin-right: 15px;
+}
+
+/* БЛОК SCRINSHOTS */
+
+.main-block-scrinshots__title {
+    text-align: center;
+}
+.main-block-scrinshots__articles {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+}
+.main-block-scrinshots__article {
+    display: flex;
+    position: relative;
+    width: 40%;
+}
+.main_block-scrinshots__article-text-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.main-block-scrinshots__article-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: auto;   
+    top: 1px;
+    left: 1px;
+}
+.main-block-scrinshots__article-title {
+    display: block;
+}
+.main-block-scrinshots__article-text {
+    display: block;
+}
+
+/* Блок REVIEWS */
+
+.main-block-reviews__title {
+    text-align: center;
+}
+.main-block-reviews__articles {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main-block-reviews__article {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 45%;
+    margin: 10px;
+}
+.main-block-reviews__article-image {
+    display: block;
+    height: 50%;
+    top: 1px;
+    left: 1px;
+}
+.main-block-reviews__article-text-block {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    margin-left: 10px;
+    width: 70%;
+    height: 60%;
+}
+.main-block-reviews__article-text {
+    font-style: italic;
+}
+.main-block-reviews__article-sign {
+    color: #989898;
+}
+.main-block-reviews__article-text {
+    display: block;
+}
+
+/* БЛОК BUY */
+
+.main-block-buy__title {
+    text-align: center;
+    }
+.main-block-buy__products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main-block-buy__product {
+    display: flex;
+    flex-direction: column;
+    background-color: #582D01;
+    margin-bottom: 20px;
+    height: 100%;
+}
+.main-block-buy__product-title {
+    text-align: center;
+}
+.main-block-buy__price {
+    text-align: center;
+    font-size: 18pt;
+    padding: 15px 0px;
+    font-weight: bold;
+    background-color: white;  
+}
+.main-block-buy__item {
+    color: white;
+}
+.main-block-buy__button-buy {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #582D01;
+}
+
+/* БЛОК CONTACTS */
+
+.main-block-contacts__title {
+    text-align: center;
+    color: white;
+}
+.main-block-contacts__main-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main-block-contacts__column-1 {
+    display: flex;
+    flex-direction: column;
+}
+.main-block-contacts__column-2 {
+    display: flex;
+    flex-direction: column;
+}
+.main-block-contacts__input {
+    width: 500px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.main-block-contacts__input-message {
+    height: 170px;
+}
+.main-block-contacts__send {
+    text-align: center;
+    margin: 10px auto;
+    width: 100px;
+    text-decoration: none;
+    color: #582D01;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.main-block-contacts__channel {
+    list-style: none;
+    margin-bottom: 10px;
+    color: white;
+}
+.main-block-contacts__skype::before {
+    content: url(/assets/contacts-skype-icon.png);
+    margin-right: 10px;
+}
+.main-block-contacts__icq::before {
+    content: url(/assets/contacts-icq-icon.png);
+    margin-right: 10px;
+}
+.main-block-contacts__email::before {
+    content: url(/assets/contacts-email-icon.png);
+    margin-right: 10px;
+}
+.main-block-contacts__phone::before {
+    content: url(/assets/contacts-phone-icon.png);
+    margin-right: 10px;
+}
+.main-block-contacts__social {
+    margin-left: 40px;
+}
+
+/* БЛОК FOOTER */
+.main-block-footer__text {
+    text-align: center;
+}
