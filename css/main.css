@@ -1,0 +1,372 @@
+@charset "UTF-8";
+@media screen and (min-width: 1024px) {
+  .catalog__item {
+    width: 20%;
+    margin-bottom: 30px;
+  }
+
+  .advant__item {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .catalog__item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .catalog__block {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    margin: 0 5px;
+  }
+  .catalog__item {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .catalog__logo {
+    display: none;
+  }
+
+  .advant__block {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    margin: 0 5px;
+  }
+  .advant__item {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+.main-body {
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+/* ЦВЕТОВОЕ ОФОРМЛЕНИЕ SECTION */
+._bg-white {
+  background-color: #ffffff;
+}
+
+._bg-blue {
+  background-color: #E9EBEE;
+}
+
+._bg-gray {
+  background-color: #555555;
+}
+
+/* 1. БЛОК HEADER */
+.header {
+  display: flex;
+  width: 100%;
+}
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(/assets/1-brush.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.header__block .logo__block {
+  display: flex;
+}
+.header__block .logo__block .logo {
+  display: block;
+  max-height: 100%;
+}
+.header__block .logo__block .header__title {
+  margin-left: 3%;
+}
+.header__block .login {
+  display: flex;
+  border-radius: 5px;
+  height: 50%;
+  align-items: center;
+  padding: 20px 10px;
+  border: 1px solid #ffffff;
+}
+.header__block .login:hover {
+  border: 1px solid #FFB940;
+}
+.header__block .login .login__img {
+  display: block;
+}
+.header__block .login .login__title {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 2em;
+}
+
+/* 2. БЛОК SLIDER */
+.slider {
+  width: 100%;
+  border-top: 3px solid #555555;
+}
+.slider__image {
+  width: 100%;
+}
+
+/* 3. БЛОК CATALOG */
+.catalog__caption {
+  display: block;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+.catalog__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.catalog__item {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.catalog__item:hover {
+  border: 1px solid #FFB940;
+}
+.catalog__title {
+  text-align: center;
+  font-size: 5vh;
+}
+.catalog__logo {
+  max-width: 100%;
+}
+
+/* 4. БЛОК ADVANT */
+.advant__caption {
+  display: block;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+.advant__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.advant__block .advant__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.advant__block .advant__item:hover {
+  border: 1px solid #FFB940;
+}
+.advant__title {
+  text-align: center;
+}
+.advant__img {
+  max-width: 40%;
+}
+.advant__text {
+  width: 90%;
+}
+
+/* 5. БЛОК BRANDS */
+.brands__caption {
+  display: block;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+.brands__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.brands__brand {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* 6. БЛОК COMMENTS */
+.comments__caption {
+  display: block;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+.comments__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.comments__comment {
+  display: flex;
+  width: 40%;
+}
+.comments__image {
+  display: block;
+  width: 100%;
+  margin: auto;
+  top: 1px;
+  left: 1px;
+}
+.comments__text-block {
+  flex-direction: column;
+  margin-left: 10px;
+}
+.comments__text {
+  display: block;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* 7. Блок NEWS */
+.news__caption {
+  display: block;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+.news__block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.news__article {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+}
+.news__image {
+  display: block;
+  height: 80%;
+}
+.news__text-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #E9EBEE;
+  margin-left: 10px;
+  width: 70%;
+  height: 60%;
+}
+.news__title {
+  margin-bottom: 0;
+}
+.news__text {
+  font-style: italic;
+}
+
+/* 8. БЛОК CONTACTS */
+.contacts__caption {
+  display: block;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+.contacts__block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contacts__col-left {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__col-right {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__input {
+  width: 500px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.contacts__input-message {
+  height: 170px;
+}
+.contacts__send {
+  text-align: center;
+  margin: 10px auto;
+  width: 100px;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 5px;
+  border: 1px solid #E9EBEE;
+  background-color: #E9EBEE;
+}
+.contacts__channel {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.contacts__skype::before {
+  content: url(/assets/contacts-skype-icon.png);
+  margin-right: 10px;
+}
+.contacts__icq::before {
+  content: url(/assets/contacts-icq-icon.png);
+  margin-right: 10px;
+}
+.contacts__email::before {
+  content: url(/assets/contacts-email-icon.png);
+  margin-right: 10px;
+}
+.contacts__phone::before {
+  content: url(/assets/contacts-phone-icon.png);
+  margin-right: 10px;
+}
+.contacts__social {
+  margin-left: 40px;
+}
+
+/* БЛОК FOOTER */
+.footer__text {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */
