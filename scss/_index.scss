@@ -1,0 +1,271 @@
+.main-body {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+/* ЦВЕТОВОЕ ОФОРМЛЕНИЕ SECTION */
+._bg-white {
+        background-color: $main-color-white;
+}
+._bg-blue {
+        background-color: $main-color_blue;
+}
+._bg-gray {
+        background-color: $main-color_gray;
+}
+
+/* 1. БЛОК HEADER */
+.header {
+        display: flex;
+        // justify-content: space-between;
+        width: 100%;
+        &__block {
+            @include section-block (space-between, center, nowrap);
+            background-image: url(/assets/1-brush.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            .logo__block {
+                display: flex;
+                .logo {
+                    display: block;
+                    max-height: 100%;
+                }
+                .header__title {
+                    margin-left: 3%;
+                }
+            }
+            .login {
+                display: flex;
+                border-radius: 5px;
+                height: 50%;
+                align-items: center;
+                padding: 20px 10px;
+                border: 1px solid $main-color-white;
+                &:hover {
+                    border: 1px solid $main-color_yellow;
+                }
+                .login__img {
+                    display: block;
+                }    
+                .login__title {
+                    display: block;
+                    text-decoration: none;
+                    color: $main-color-black;
+                    font-size: 2em;
+                }
+            }
+
+        }    
+}
+
+/* 2. БЛОК SLIDER */
+.slider {
+        width: 100%;
+        border-top: 3px solid $main-color-gray;
+        &__image {
+            width: 100%;
+        }
+}
+
+/* 3. БЛОК CATALOG */
+.catalog {
+        &__caption {
+            @include caption;
+        }
+        &__block {
+            @include section-block; 
+        }
+        &__item {
+            border: 1px solid $main-color-white;  
+            border-radius: 5px;
+            background-color: $main-color-white;
+            &:hover {
+                border: 1px solid $main-color_yellow;
+            }
+        }
+        &__title {
+                text-align: center;
+                font-size: 5vh;
+                
+        }
+        &__logo {
+            max-width: 100%;
+        }
+
+}
+
+/* 4. БЛОК ADVANT */
+.advant {
+        &__caption {
+            @include caption;
+        }
+        &__block {
+            @include section-block;
+            .advant__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid $main-color-white;
+                border-radius: 5px;
+                &:hover {
+                    border: 1px solid $main-color_yellow;
+                }
+            }
+        }
+        &__title {
+            text-align: center;
+        }
+        &__img {
+            max-width: 40%;
+        }
+        &__text {
+            width: 90%;
+        }
+}
+
+/* 5. БЛОК BRANDS */ 
+.brands {
+        &__caption {
+            @include caption;
+        }
+        &__block {
+            @include section-block (space-around, center, nowrap);
+        }
+        &__brand {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+}
+
+/* 6. БЛОК COMMENTS */
+.comments {
+        &__caption {
+            @include caption;
+        }
+        &__block {
+            @include section-block;
+        }
+        &__comment {
+            display: flex;
+            width: 40%;
+        }
+        &__image {
+            display: block;
+            width: 100%;
+            margin: auto;   
+            top: 1px;
+            left: 1px;
+        }
+        &__text-block {
+            flex-direction: column;
+            margin-left: 10px;
+        }
+        &__text {
+            display: block;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+}
+
+/* 7. Блок NEWS */
+.news {
+        &__caption {
+            @include caption;
+        }
+        &__block {
+            @include section-block;
+        }
+        &__article {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            width: 45%;
+            height: 100%;
+            padding: 10px;
+        }
+        &__image {
+            display: block;
+            height: 80%;
+        }
+        &__text-block {
+            display: flex;
+            flex-direction: column;
+            background-color: $main-color_blue;
+            margin-left: 10px;
+            width: 70%;
+            height: 60%;
+        }
+        &__title {
+            margin-bottom: 0;
+        }
+        &__text {
+            font-style: italic;
+        }
+}
+
+/* 8. БЛОК CONTACTS */
+.contacts {
+        &__caption {
+            @include caption;
+        }
+        &__block {
+            @include section-block (center, flex-start);
+        }
+        &__col-left {
+            display: flex;
+            flex-direction: column;
+        }
+        &__col-right {
+            display: flex;
+            flex-direction: column;
+        }
+        &__input {
+            width: 500px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        &__input-message {
+            height: 170px;
+        }
+        &__send {
+            text-align: center;
+            margin: 10px auto;
+            width: 100px;
+            text-decoration: none;
+            color: $main-color-black;
+            border-radius: 5px;
+            border: 1px solid $main-color_blue;
+            background-color: $main-color_blue;
+        }
+        &__channel {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        &__skype::before {
+            content: url(/assets/contacts-skype-icon.png);
+            margin-right: 10px;
+        }
+        &__icq::before {
+            content: url(/assets/contacts-icq-icon.png);
+            margin-right: 10px;
+        }
+        &__email::before {
+            content: url(/assets/contacts-email-icon.png);
+            margin-right: 10px;
+        }
+        &__phone::before {
+            content: url(/assets/contacts-phone-icon.png);
+            margin-right: 10px;
+        }
+        &__social {
+            margin-left: 40px;
+        }
+}
+
+/* БЛОК FOOTER */
+.footer__text {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+}

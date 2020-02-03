@@ -1,0 +1,55 @@
+@media screen and (min-width: 1024px) {
+    .catalog {
+        &__item {
+            width: 20%;
+            margin-bottom: 30px;
+        }
+    }
+    .advant {
+        &__item {
+            width: 25%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .catalog {
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .catalog {
+        &__block {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: stretch;
+            margin: 0 5px;
+        }
+        &__item {
+            width: 100%;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+        &__logo {
+            display: none;
+        }
+    }
+    .advant {
+        &__block {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: stretch;
+            margin: 0 5px;
+        }
+        &__item {
+            flex-direction: row;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+    }
+}
