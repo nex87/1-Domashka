@@ -2,7 +2,6 @@
     width: 100%;
     margin: 0 auto 0 auto;
 }
-
 /* ЦВЕТОВОЕ ОФОРМЛЕНИЕ SECTION */
 ._bg-white {
         background-color: $main-color-white;
@@ -17,7 +16,7 @@
 /* 1. БЛОК HEADER */
 .header {
         display: flex;
-        // justify-content: space-between;
+        position: relative;
         width: 100%;
         &__block {
             @include section-block (space-between, center, nowrap);
@@ -60,15 +59,89 @@
 
 /* 2. БЛОК SLIDER */
 .slider {
+    position: relative;
         width: 100%;
+        height: 248px;
+        overflow: hidden;
         border-top: 3px solid $main-color-gray;
-        &__image {
+        &__block {
+            display: flex;
             width: 100%;
+            height: 248px;
         }
+        &__caption {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        &__button {
+            position: absolute;
+            top: 110px;
+            margin-top: 10px;
+            font-family: Helvetica, arial, serif;
+            color: black;
+            text-align:center;
+            font-size:15px;
+            cursor: pointer;
+            text-decoration: none;
+            padding:5px;
+            border: 1px solid rgba(0,0,0,0.5);
+            border-bottom: 3px solid rgba(0,0,0,0.5);
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+              inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+              inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+              inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+              inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+            -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+              inset 0 1px rgba(255,255,255,0.3),
+              inset 0 10px rgba(255,255,255,0.2),
+              inset 0 10px 20px rgba(255,255,255,0.25),
+              inset 0 -15px 30px rgba(0,0,0,0.3);
+            -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+              inset 0 1px rgba(255,255,255,0.3),
+              inset 0 10px rgba(255,255,255,0.2),
+              inset 0 10px 20px rgba(255,255,255,0.25),
+              inset 0 -15px 30px rgba(0,0,0,0.3);
+        }
+        &__button:hover {
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+            -moz-opacity:0.7;
+            -khtml-opacity: 0.7;
+        }
+        &__button-left {
+            left: 10px;
+        }
+        &__button-right {
+            right: 10px;
+        }
+
 }
+._slide-1 {
+    background-image: url(/assets/2-slider.jpg);
+}
+._slide-2 {
+    background-image: url(/assets/2-slider-bgBlue.jpg);
+}
+._slide-3 {
+    background-image: url(/assets/2-slider-bgGreen.jpg);
+}
+._slide-4 {
+    background-image: url(/assets/2-slider-bgPink.jpg);
+}
+._slide-5 {
+    background-image: url(/assets/2-slider-bgYellow.jpg);
+}
+
+
 
 /* 3. БЛОК CATALOG */
 .catalog {
+    position: relative;
         &__caption {
             @include caption;
         }
@@ -96,6 +169,7 @@
 
 /* 4. БЛОК ADVANT */
 .advant {
+    position: relative;
         &__caption {
             @include caption;
         }
@@ -125,6 +199,7 @@
 
 /* 5. БЛОК BRANDS */ 
 .brands {
+    position: relative;
         &__caption {
             @include caption;
         }
@@ -140,6 +215,7 @@
 
 /* 6. БЛОК COMMENTS */
 .comments {
+    position: relative;
         &__caption {
             @include caption;
         }
@@ -170,6 +246,7 @@
 
 /* 7. Блок NEWS */
 .news {
+    position: relative;
         &__caption {
             @include caption;
         }
@@ -206,6 +283,7 @@
 
 /* 8. БЛОК CONTACTS */
 .contacts {
+    position: relative;
         &__caption {
             @include caption;
         }
@@ -269,3 +347,49 @@
         margin-top: 0px;
         margin-bottom: 0px;
 }
+
+.minmax {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+a.button {
+    margin-top: 10px;
+    font-family: Helvetica, arial, serif;
+    color: black;
+    text-align:center;
+    font-size:15px;
+    cursor: pointer;
+    text-decoration: none;
+    padding:5px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+      inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+      inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+      inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+      inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+      inset 0 1px rgba(255,255,255,0.3),
+      inset 0 10px rgba(255,255,255,0.2),
+      inset 0 10px 20px rgba(255,255,255,0.25),
+      inset 0 -15px 30px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+      inset 0 1px rgba(255,255,255,0.3),
+      inset 0 10px rgba(255,255,255,0.2),
+      inset 0 10px 20px rgba(255,255,255,0.25),
+      inset 0 -15px 30px rgba(0,0,0,0.3);
+      -moz-user-select: none;
+      -webkit-user-select: none;
+  }
+
+  a.button:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+  }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/main.css">
-    <script src="/scripts/script.js"></script>
+    
     <title>Document</title>
 </head>
 
@@ -26,12 +26,28 @@
                 <img class="login__img" src="/assets/login.png" alt="login-image">
                 <a class="login__title" href="">ВОЙТИ</a>
             </div>
-        </div>
+        </div>  
     </header>
 
     <!-- 2. БЛОК SLIDER -->
     <section class="slider _bg-white">
-        <img class="slider__image" src="/assets/2-slider.jpg" alt="slider-image">
+        <div class="slider__block _slide-1">
+            <p class="slider__caption">Группа товаров №1</p>
+        </div>
+        <div class="slider__block _slide-2">
+            <p class="slider__caption">Группа товаров №2</p>
+        </div>
+        <div class="slider__block _slide-3">
+            <p class="slider__caption">Группа товаров №3</p>
+        </div>
+        <div class="slider__block _slide-4">
+            <p class="slider__caption">Группа товаров №4</p>
+        </div>
+        <div class="slider__block _slide-5">
+            <p class="slider__caption">Группа товаров №5</p>
+        </div>
+        <a class="slider__button slider__button-left" href="#" role="button"><</a>
+        <a class="slider__button slider__button-right" href="#" role="button">></a>      
     </section>
 
     <!-- 3. БЛОК CATALOG -->
@@ -103,6 +119,9 @@
                 <img class="catalog__logo" src="/assets/3-catalog.png" alt="item__logo">
             </div>
         </div>
+        <div class="minmax catalog__minmax">
+            <a href="#" class="button catalog__button">Min</a>
+          </div>   
     </section>
 
     <!-- 4. БЛОК ADVANT -->
@@ -140,6 +159,9 @@
                 <p class="advant__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum error quo totam? Ab, dignissimos nulla?</p>
             </div>
         </div>
+        <div class="minmax">
+            <a class="button advant__minmax">Min</a>
+          </div>   
     </section>
 
     <!-- 5. БЛОК BRANDS -->
@@ -171,6 +193,9 @@
                 <h3 class="brand__title">Бренд 6</h3>
             </div>
         </div>
+        <div class="minmax">
+            <a class="button brands__minmax">Min</a>
+          </div>   
     </section>
 
     <!-- 6. БЛОК COMMENTS -->
@@ -206,6 +231,9 @@
                 </div>
             </article>
         </div>
+        <div class="minmax">
+            <a class="button comments__minmax">Min</a>
+          </div>   
     </section>
 
     <!-- 7. Блок NEWS -->
@@ -242,6 +270,9 @@
             </article>
         
         </div>
+        <div class="minmax">
+            <a class="button news__minmax">Min</a>
+          </div>   
     </section>
 
     <!-- 8. БЛОК CONTACTS -->
@@ -263,11 +294,12 @@
                 </ul>
                     <img class="contacts__social" src="/assets/social-buttons.png">
             </div> 
-        </div>
+        </div> 
     </section>
 
     <footer class="footer">
         <p class="footer__text">Copyright © 2020 "BeaverBuilder" Marketplace</p>
     </footer>
 </body>
+<script src="/scripts/js_7.js"></script>
 </html>
