@@ -1,0 +1,42 @@
+body {
+    position: relative;
+}
+    h1 {
+    text-align: center;
+}
+.block {
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+.bl_1 {
+    position: absolute;
+    border: 1px solid #1E1E1E;
+    border-radius: 10px;
+    left: 10px;
+    width: 75%;
+}
+.bl_2 {
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 10px;
+    width: 20%;
+}
+.bl_3, .bl_4 {
+    border: 1px solid #1E1E1E;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px;
+}
+h2 {
+    text-align: center;
+}
+.outputMyResults {
+    padding-left: 20px;
+}
+.outputListQuestions {
+    padding-left: 20px;
+}
